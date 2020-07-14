@@ -1,4 +1,4 @@
-class Car
+class Vehicle
   def initialize
   end
 
@@ -11,5 +11,18 @@ class Car
   end
 
   def beep
+    puts "BEEEEEP"
   end
 end
+
+class Motorbike < Vehicle
+  def initialize
+  end
+
+  def wheelie
+  end
+end
+
+frankie = Motorbike.new
+
+frankie.beep
